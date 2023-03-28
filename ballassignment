@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        body>div{
+            background-image: url(https://norahcolvin.files.wordpress.com/2015/06/johnny-automatic-playing-ball.png);
+            background-position: center;
+            background-repeat: no-repeat;
+
+            height: 100%;
+            width: 100%;
+        }
+        .firstanim{
+            animation: circle1 1.5s linear 0s infinite reverse;
+        }
+        .secondanim{
+            transform: translateY(20px);
+            animation: circle2 1.5s linear 0s infinite reverse ;
+        }
+        .first_circle{
+         height: 40px;
+         width:40px;
+         background-color: red;
+         border-radius: 50%;
+         display: inline-block;
+         /* padding: 10px; */
+         margin: 100px 60px 50px 60px;
+         transform: translateX(610px);
+         ;
+        }
+
+        .second_circle{
+         height: 40px;
+         width:40px;
+         background-color: yellow;
+         border-radius: 50%;
+         display: inline-block;
+         margin: 100px 40px 50px 40px ;
+         transform: translateX(560px);
+        }
+        .second_circle_spl{
+         height: 40px;
+         width:40px;
+         background-color: yellow;
+         border-radius: 50%;
+         display: inline-block;
+         margin: 100px 70px 50px 70px ;
+         transform: translateX(571px);
+        }
+        @keyframes circle1 {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+               transform: translateY(225px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes circle2 {
+            0%{
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-225px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+    <div class="firstanim">
+    <span class="first_circle"></span>
+    <span class="first_circle"></span>
+    </div>
+    <div class="secondanim">
+    <span class="second_circle"></span>
+    <span class="second_circle_spl"></span>
+    <span class="second_circle"></span>
+    </div>
+    </div>
+</body>
+</html>
