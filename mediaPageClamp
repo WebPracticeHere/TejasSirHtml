@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .navbar {
+            background-color: black;
+            padding: 10px 20px;
+        }
+        .brand {
+            text-decoration: none;
+            font-size: clamp(1rem,4vw,2rem);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+        .navbar>div>a {
+            margin: 10px 20px;
+        }
+        .menu-btn {
+            background: none;
+            font-size: 1.5rem;
+            color: white;
+            border: none;
+        }
+        @media (min-width : 750px) {
+            .menu-btn {
+                display: none;
+            }
+        }
+        @media (max-width:750px) {
+            .navbar>div {
+                display: none;
+            }
+        }
+        .section {
+            /* min-width: 150px;
+            width: 50vw;
+            max-width : 600px; */
+            width: clamp(150px,50vw,600px);
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="" class="brand">Jspiders</a>
+        <div>
+            <a href="">Home</a>
+            <a href="">Home</a>
+            <a href="">Home</a>
+            <a href="">Home</a>
+            <a href="">Home</a>
+            <a href="">Home</a>
+            <a href="">Home</a>
+            <a href="">Home</a>
+        </div>
+        <button class="menu-btn"><i class="fa fa-bars"></i></button>
+    </div>
+    <div class="section"></div>
+</body>
+</html>
